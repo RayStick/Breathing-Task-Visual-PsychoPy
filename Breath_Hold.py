@@ -24,7 +24,8 @@ from psychopy.hardware.emulator import launchScan  # to read TTL pulse from MR s
 
 scan_trigger = 5  # value the MRI pulse trigger is read in as
 doRest = 3  # 0 = no rest; 1 = rest before BH; 2 = rest after BH; 3= rest before AND after BH
-tResting = 30  # duration of resting fixation in seconds
+tResting_start = 10  # duration of resting fixation at the start in seconds
+tResting_end = 30  # duration of resting fixation at the end in seconds
 
 # Task components : Paced Breathing, BH, Exhale, Recover
 trialnum = 1  # number of BH trial repeats
@@ -75,7 +76,8 @@ thisExp = data.ExperimentHandler(name=expName, version='',
                                  dataFileName=filename)
 
 expInfo['doRest'] = doRest
-expInfo['tResting'] = tResting
+expInfo['tResting_start'] = tResting_start
+expInfo['tResting_end'] = tResting_end
 expInfo['trialnum'] = trialnum
 expInfo['tPace'] = tPace
 expInfo['tBreathPace'] = tBreathPace
@@ -170,7 +172,7 @@ globalClock = core.Clock()  # to track the time since experiment started
 if doRest == 1 or doRest == 3:
     fixation.draw()
     win.flip()
-    event.waitKeys(maxWait=tResting, keyList=[end_exp_key], timeStamped=False)
+    event.waitKeys(maxWait=tResting_start, keyList=[end_exp_key], timeStamped=False)
 
 # START BH TASK
 routineTimer = core.CountdownTimer()  # to track time remaining of each routine
@@ -355,7 +357,7 @@ if doRest == 2 or doRest == 3:
     pace.setAutoDraw(False)
     fixation.draw()
     win.flip()
-    event.waitKeys(maxWait=tResting, keyList=[end_exp_key], timeStamped=False)
+    event.waitKeys(maxWait=tResting_end, keyList=[end_exp_key], timeStamped=False)
 
 # These should auto-save but just in case:
 thisExp.saveAsWideText(filename+'.csv')
