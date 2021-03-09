@@ -21,12 +21,12 @@ from psychopy.hardware.emulator import launchScan  # this is to read in TTL puls
 ######################
 
 scan_trigger = 5  # value the MRI pulse trigger is read in as
-doRest = 2  # 0 = no rest; 1 = rest before CDB task; 2 = rest after CDB task; 3= rest before AND after CDB task
-tResting = 30  # duration of resting fixation in seconds
+doRest = 3  # 0 = no rest; 1 = rest before CDB task; 2 = rest after CDB task; 3= rest before AND after CDB task
+tResting_start = 28  # duration of resting fixation at the start in seconds
+tResting_end = 10  # duration of resting fixation at the end in seconds
 
 # Task components : Rest, Get Ready, IN-OUT, Breathe Normally
 trialnum = 2  # number of CDB repeats
-tStartRest = 28  # duration of rest before first CDB section
 tGetReady = 2  # duration of get ready warning before CDB section
 tCDB = 8  # duration of CDB
 tCDBPace = 4  # duration of each breath in/out in seconds e.g. 6.0 s would be 3s IN and 3s OUT (tCDB / tCDBPace needs to be integer )
@@ -72,7 +72,8 @@ thisExp = data.ExperimentHandler(name=expName, version='',
                                  dataFileName=filename)
 
 expInfo['doRest'] = doRest
-expInfo['tResting'] = tResting
+expInfo['tResting_start'] = tResting_start
+expInfo['tResting_end'] = tResting_end
 expInfo['trialnum'] = trialnum
 expInfo['tFree'] = tFree
 expInfo['tCDB'] = tCDB
@@ -158,12 +159,7 @@ globalClock = core.Clock()  # to track the time since experiment started
 if doRest == 1 or doRest == 3:
     fixation.draw()
     win.flip()
-    event.waitKeys(maxWait=tResting, keyList=[end_exp_key], timeStamped=False)
-
-# FIRST SECTION OF REST
-fixation.draw()
-win.flip()
-event.waitKeys(maxWait=tStartRest, keyList=[end_exp_key], timeStamped=False)
+    event.waitKeys(maxWait=tResting_start, keyList=[end_exp_key], timeStamped=False)
 
 # START CDB TASK
 routineTimer = core.CountdownTimer()  # to track time remaining of each routine
@@ -307,7 +303,7 @@ if doRest == 2 or doRest == 3:
    free.setAutoDraw(False)
    fixation.draw()
    win.flip()
-   event.waitKeys(maxWait=tResting, keyList=[end_exp_key], timeStamped=False)
+   event.waitKeys(maxWait=tResting_end, keyList=[end_exp_key], timeStamped=False)
 
 # These should auto-save but just in case:
 thisExp.saveAsWideText(filename+'.csv')
