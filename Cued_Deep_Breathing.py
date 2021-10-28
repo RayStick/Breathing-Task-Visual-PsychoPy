@@ -23,7 +23,7 @@ from psychopy.hardware.emulator import launchScan  # this is to read in TTL puls
 scan_trigger = 5  # value the MRI pulse trigger is read in as
 doRest = 3  # 0 = no rest; 1 = rest before CDB task; 2 = rest after CDB task; 3= rest before AND after CDB task
 tResting_start = 28  # duration of resting fixation at the start in seconds
-tResting_end = 10  # duration of resting fixation at the end in seconds
+tResting_end = 30  # duration of resting fixation at the end in seconds
 
 # Task components : Rest, Get Ready, IN-OUT, Breathe Normally
 trialnum = 2  # number of CDB repeats
