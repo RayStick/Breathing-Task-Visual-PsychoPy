@@ -4,8 +4,10 @@
 """
 Cued Deep Breathing (CDB)
 
-Instructions are displayed to the participant in this order: Get Ready, Deep Breaths, Breathe Normally
-The script can be started by an MRI pulse trigger.
+Instructions are displayed to the participant in this order: Get Ready, Deep Breaths, Breathe Normally.
+Change the timing of these instructions in the 'CHANGE PARAMETERS' section.
+There is an option to start with a period of rest and end with a period of rest (fixation only) - recommended! 
+The script can be started by an MRI pulse trigger, or manually.
 
 """
 
@@ -20,19 +22,19 @@ from psychopy.hardware.emulator import launchScan  # this is to read in TTL puls
 #  CHANGE PARAMETERS #
 ######################
 
-scan_trigger = 5  # value the MRI pulse trigger is read in as
-doRest = 3  # 0 = no rest; 1 = rest before CDB task; 2 = rest after CDB task; 3= rest before AND after CDB task
-tResting_start = 28  # duration of resting fixation at the start in seconds
-tResting_end = 30  # duration of resting fixation at the end in seconds
+scan_trigger = 5  
+doRest = 3  
+tResting_start = 28  
+tResting_end = 30 
 
-# Task components : Rest, Get Ready, IN-OUT, Breathe Normally
-trialnum = 2  # number of CDB repeats
-tGetReady = 2  # duration of get ready warning before CDB section
-tCDB = 8  # duration of CDB
-tCDBPace = 4  # duration of each breath in/out in seconds e.g. 6.0 s would be 3s IN and 3s OUT (tCDB / tCDBPace needs to be integer )
-tFree = 43  # duration of free breathing in between each CDB section
+# Task components : Get Ready, IN-OUT, Breathe Normally
+trialnum = 2  
+tGetReady = 2 
+tCDB = 8  
+tCDBPace = 4  
+tFree = 43  
 CDB_instructions = 'DEEP BREATHING task \n \nTake deep breaths IN and OUT when cued \n \nBreathe through your nose'
-end_exp_key = 'escape'  # key to press to end the experiment as it is running
+end_exp_key = 'escape' 
 
 #######
 # RUN #
