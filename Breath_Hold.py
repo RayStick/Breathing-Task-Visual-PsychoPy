@@ -6,7 +6,7 @@ Breath_Hold (BH)
 
 Instructions are displayed to the participant in this order: Paced Breathing, Breath Hold, Exhale, Recover.
 Change the timing of these instructions in the 'CHANGE PARAMETERS' section.
-There is an option to start with a period of rest and end with a period of rest (fixation only).
+There is an option to start with a period of rest and end with a period of rest (fixation only) - recommended!
 The script can be started by an MRI pulse trigger, or manually.
 
 """
