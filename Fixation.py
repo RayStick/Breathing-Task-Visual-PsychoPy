@@ -14,8 +14,8 @@ from psychopy import visual, core, event
 ######################
 #  CHANGE PARAMETERS #
 ######################
-RestDuration = 600  # duration of the resting block in seconds
-end_exp_key = 'escape'  # key to press to end the experiment prematurely
+RestDuration = 600  
+end_exp_key = 'escape'
 
 #######
 # RUN #
