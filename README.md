@@ -7,7 +7,8 @@ Written with PsychoPy3.0.5
 Tips for using this code:
 --------------
 
-- It is designed to be used alongside recordings of end-tidal CO2 and O2 via a nasal cannula, during MRI, but can be used with other set-ups. 
+- It is designed to be used alongside recordings of end-tidal CO2 and O2 via a nasal cannula, during MRI, but can be used with other set-ups.
+- If you are sampling exhaled CO2 and O2, it is good practice to measure the partial pressure of these recordings before the scanning session (to appropriately calibrate your gas analyzer within your recording environment, in order to convert signal recordings from Volts to mmHg).
 - Press '5' when it says 'waiting for scanner ...' to manually start the breathing task instructions. Or set this input to be whatever the MRI sends to indicate the first volume of data is being acquired so that your breathing task will be synchronized to the start of your scan. 
 - Always practice with the participant beforehand to make sure they understand the task instructions and can achieve the desired end-tidal changes. 
 - Tell them to breathe through their nose (if you are sampling end-tidal CO2 with a nasal cannula). 
