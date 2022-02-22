@@ -7,7 +7,7 @@ Breath_Hold (BH)
 Instructions are displayed to the participant in this order: Paced Breathing, Breath Hold, Exhale, Recover.
 Change the timing of these instructions in the 'CHANGE PARAMETERS' section.
 There is an option to start with a period of rest and end with a period of rest (fixation only).
-The script can be started by an MRI pulse trigger.
+The script can be started by an MRI pulse trigger, or manually.
 
 """
 
@@ -22,20 +22,20 @@ from psychopy.hardware.emulator import launchScan  # to read TTL pulse from MR s
 #  CHANGE PARAMETERS #
 ######################
 
-scan_trigger = 5  # value the MRI pulse trigger is read in as
-doRest = 3  # 0 = no rest; 1 = rest before BH; 2 = rest after BH; 3= rest before AND after BH
-tResting_start = 10  # duration of resting fixation at the start in seconds
-tResting_end = 30  # duration of resting fixation at the end in seconds
+scan_trigger = 5  
+doRest = 3  
+tResting_start = 10  
+tResting_end = 30 
 
 # Task components : Paced Breathing, BH, Exhale, Recover
-trialnum = 1  # number of BH trial repeats
-tPace = 24  # duration of paced breathing in seconds
-tBreathPace = 6  # duration of each breath in/out in seconds e.g. 6.0 s would be 3s IN and 3s OUT (tPace / tBreathPace pace needs to be integer )
-tHold = 18  # duration of BH in seconds
-tExhale = 2  # duration for expelling air after BH in seconds
-tRecover = 6  # duration of recovery breaths in seconds
+trialnum = 1  
+tPace = 24  
+tBreathPace = 6  
+tHold = 18  
+tExhale = 2  
+tRecover = 8  
 BH_instructions = 'BREATH-HOLD task \n \nFollow the breathing instructions \n \nBreathe through your nose'
-end_exp_key = 'escape'  # key to press to end the experiment as it is running
+end_exp_key = 'escape'  
 
 #######
 # RUN #
