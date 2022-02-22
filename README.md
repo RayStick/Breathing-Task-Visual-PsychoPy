@@ -68,5 +68,5 @@ The CO2 and O2 recordings, measured here in mmHg, should look something like thi
 
 ![image2](https://github.com/RayStick/BreathingTasks_PsychoPy/blob/main/CDB_BreathingTrace.png)
 
-Use a peak detection algorithm to create the end-tidal trace from breathing traces like this. A linear interpolation is often using between each sampled end-tidal value. Some peak detection algorithms on GitHub: [peakdet](https://github.com/physiopy/peakdet) and [NeuroKit](https://github.com/neuropsychology/NeuroKit)
+Use a peak detection algorithm to create the end-tidal trace from breathing traces like this. A linear interpolation is often used between each sampled end-tidal value. Some peak detection algorithms on GitHub: [peakdet](https://github.com/physiopy/peakdet) and [NeuroKit](https://github.com/neuropsychology/NeuroKit)
 
