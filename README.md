@@ -1,4 +1,7 @@
 BreathingTasks_PsychoPy
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 ==============
 PsychoPy code to display visual instructions for a 'Breath Hold' and a 'Cued Deep Breathing' task, alongside MRI scanning.
 
@@ -70,3 +73,23 @@ The CO2 and O2 recordings, measured here in mmHg, should look something like thi
 
 Use a peak detection algorithm to create the end-tidal trace from breathing traces like this. A linear interpolation is often used between each sampled end-tidal value. Some peak detection algorithms on GitHub: [peakdet](https://github.com/physiopy/peakdet) and [NeuroKit](https://github.com/neuropsychology/NeuroKit)
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/kristinazvolanek"><img src="https://avatars.githubusercontent.com/u/54590158?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kristina Zvolanek</b></sub></a><br /><a href="https://github.com/RayStick/BreathingTasks_PsychoPy/pulls?q=is%3Apr+reviewed-by%3Akristinazvolanek" title="Reviewed Pull Requests">👀</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
