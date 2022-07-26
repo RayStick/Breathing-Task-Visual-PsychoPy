@@ -1,6 +1,6 @@
 BreathingTasks_PsychoPy
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 ==============
 PsychoPy code to display visual instructions for a 'Breath Hold' and a 'Cued Deep Breathing' task, alongside MRI scanning.
@@ -85,6 +85,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/kristinazvolanek"><img src="https://avatars.githubusercontent.com/u/54590158?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kristina Zvolanek</b></sub></a><br /><a href="https://github.com/RayStick/BreathingTasks_PsychoPy/pulls?q=is%3Apr+reviewed-by%3Akristinazvolanek" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/smoia"><img src="https://avatars.githubusercontent.com/u/35300580?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stefano Moia</b></sub></a><br /><a href="https://github.com/RayStick/BreathingTasks_PsychoPy/pulls?q=is%3Apr+reviewed-by%3Asmoia" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://linkedin.com/in/rstickland-phd"><img src="https://avatars.githubusercontent.com/u/50215726?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rachael Stickland</b></sub></a><br /><a href="https://github.com/RayStick/BreathingTasks_PsychoPy/commits?author=RayStick" title="Code">💻</a> <a href="#ideas-RayStick" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
