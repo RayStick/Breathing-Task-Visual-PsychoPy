@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "kristinazvolanek",
+      "name": "Kristina Zvolanek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54590158?v=4",
+      "profile": "https://github.com/kristinazvolanek",
+      "contributions": [
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "BreathingTasks_PsychoPy",
+  "projectOwner": "RayStick",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
