@@ -2,6 +2,8 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+[![DOI](https://zenodo.org/badge/223283087.svg)](https://zenodo.org/badge/latestdoi/223283087)
+
 PsychoPy code to display visual instructions for a _Breath Hold_ and a _Cued Deep Breathing_ task, alongside MRI scanning.
 ==============
 
