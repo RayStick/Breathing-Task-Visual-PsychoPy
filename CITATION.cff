@@ -7,9 +7,10 @@ type: software
 authors:
   - given-names: Rachael
     family-names: Stickland
+  - given-names: Molly
+    family-names: Bright
   - given-names: Stefano
     family-names: Moia
   - given-names: Kristina
     family-names: Zvolanek
-  - given-names: Molly
-    family-names: Bright
+
