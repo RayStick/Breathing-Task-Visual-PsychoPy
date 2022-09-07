@@ -1,9 +1,9 @@
-BreathingTasks_PsychoPy
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+PsychoPy code to display visual instructions for a _Breath Hold_ and a _Cued Deep Breathing_ task, alongside MRI scanning.
 ==============
-PsychoPy code to display visual instructions for a 'Breath Hold' and a 'Cued Deep Breathing' task, alongside MRI scanning.
 
 How to run:
 --------------
@@ -57,7 +57,8 @@ Tips for using this code:
 - Press '5' when it says 'waiting for scanner ...' to manually start the breathing task instructions. Or set this input to be whatever the MRI sends to indicate the first volume of data is being acquired so that your breathing task will be synchronized to the start of your scan. 
 - Always practice with the participant before the main experimental session to make sure they understand the task instructions and can achieve the desired end-tidal changes. If possible, practice while monitoring the physiological signals closely. Pay particular attention to the **exhalations preceding and following** the hold: if they are not performed well, you won't be able to use the recorded data in the most appropriate way. See the pictures below, which show an example of good task compliance. 
 - Tell them to breathe through their nose (if you are sampling end-tidal CO2 with a nasal cannula). 
-- The fixation cross at the start and end of the BH and CDB tasks can help establish a steady-state response before the start of the breathing task and compensate for any signal delays between end-tidal recordings and other recordings e.g. blood flow with fMRI. It is always good to record the end-tidals for about a minute before and after your actual task, to allow for correcting these types of things. 
+- The fixation cross at the start and end of the BH and CDB tasks can help establish a steady-state response before the start of the breathing task and compensate for any signal delays between end-tidal recordings and other recordings e.g. blood flow with fMRI. It is always good to record the end-tidals for about a minute before and after your actual task, to allow for correcting these types of things.
+- If carrying out these tasks during MRI scanning, remind the particpant in a few occasions to try to keep their head still very still. Unfortunately, task-correlated motion is common.
 
 **For BH**: There is a period of paced breathing to try to get the participant to breathe consistently. Also, this paced breathing finishes with an exhale. This is important because this allows an end-tidal estimate just before the hold period. During the hold period, the participant should not breathe in or out. Right at the end of the hold period it says 'Exhale' - this is important because it allows an end-tidal estimate just after the hold period. Instruct your participant by saying something like "You will want to breathe in just after the hold but we need you to do one more exhale - breathe out all the air you have left!". If a participant cannot manage the full length of the hold, that is okay - just tell them to always end the hold with this exhale, even if the hold is shorter. The 'Recover' period of time is for the participant to take a few recovery breaths, how they like, before the paced breathing starts up again. If your participants are struggling to do this task, even after further practice, consider decreasing the hold time and increasing the recovery time. 
 
