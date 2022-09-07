@@ -1,0 +1,18 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'Breathing-Task-Visual-PsychoPy [Software]'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Rachael
+    family-names: Stickland
+  - given-names: Stefano
+    family-names: Moia
+  - given-names: Kristina
+    family-names: Zvolanek
+  - given-names: Molly
+    family-names: Bright
